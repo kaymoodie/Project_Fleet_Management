@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Vehicle Fleet Management</title>
+    <link rel="stylesheet" href="../style/style.css">
+    <link rel="icon" href="favicon.ico">
+
+  </head>
+
+  <body>
+    <div class="top-container">
+      <a id="dashboard" href="dashboard.html">Dashboard</a>
+      <img id="app-logo" src="../images/App_Logo.png" alt="App Logo">
+    </div>
+    <div class="middle-container">
+      <div id="navigation-bar">
+        <ul  class="navigation-list">
+          <li>
+            <a  class="navigation-item" href="tracking.html">VEHICLE TRACKING</a>
+          </li>
+          <li>
+            <a class="navigation-item" href="vehicle.html">VEHICLES</a>
+          </li>
+          <li>
+            <a class="navigation-item" href="schedule.html">SCHEDULE</a>
+          </li>
+          <li class="active-nav-item">
+            <a class="navigation-item active-nav-item-link" href="maintenance.html">MAINTENCANCE</a>
+          </li>
+          <li>
+            <a class="navigation-item" href="fuel.html">FUEL</a>
+          </li>
+          <li>
+            <a class="navigation-item" href="driver.html">DRIVER</a>
+          </li>
+        </ul>
+        <a id="reports" href="reports.html">REPORTS</a>
+      </div>
+      <div class="data-section">
+        <div class="data-container" style="left:16%; width:80%">
+          <h4 class="data-heading"> Maintenance </h4>
+          <div class="general-info-menu">
+            <ul class="menu">
+              <li class="menu-items">
+                <a class="menu-link" href="maintenance-general.html">General</a>
+              </li>
+              <li class="menu-items" style="background-color:#A9AAAB;">
+                <a class="menu-link" style="color:#FFFFFF" href="#">Costing</a>
+              </li>
+              <li class="menu-items">
+                <a class="menu-link" href="maintenance-comments.html">Comments</a>
+              </li>
+            </ul>
+          </div>
+          <div class="data">
+              <form class="info-form" action="maintenance-general-edit.html" method="post">
+                <div class="data-wrapper">
+                  <div class="data-column">
+                    <label class="general-data-label"> Vehicle Registration No.</label>
+                    <input type="text" name="registration_no" value="" class="general-data-input">
+                    <br />
+                  </div>
+                  <div class="data-column">
+                    <label class="general-data-label"> Job #</label>
+                    <input type="text" name="job-no" value="" class="general-data-input">
+                    <br />
+                  </div>
+                  <div class="data-column">
+                    <label class="general-data-label">Parts 1 </label>
+                    <input type="text" name="part" value="" class="general-data-input">
+                    <br/>
+                    <br/>
+                    <a id="advance-search" class="links" style="font-size:100%; top:35%; left:35%;"href="maintenance-costing-add-more-parts.html">Add More Parts</a>
+                  </div>
+                  <div class="data-column">
+                    <label class="general-data-label"> Cost </label>
+                    <input type="text" name="part1_cost" value="" class="general-data-input">
+                  </div>
+                  <div class="data-column">
+                    <br/>
+                    <br/>
+                    <label class="general-data-label"> Labour </label>
+                    <input type="text" name="labour" value="" class="general-data-input">
+                  </div>
+                  <div class="data-column">
+                  </div>
+                  <div class="data-column">
+                  </div>
+                  <div class="data-column">
+                  </div>
+                  <div class="data-column">
+                    <label class="general-data-label"> Total cost</label>
+                    <input type="text" name="total-cost" value="" class="general-data-input">
+                    <br />
+                  </div>
+
+                </div>
+                <input type="submit" value="Save" class="buttons general-data-button">
+                <input type="submit" value="Edit" class="buttons general-data-button">
+              </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="bottom-container">
+      <p id="copywrite"> © 2021 Kanika Agimudie.</p>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="../style/style.css">
+    <link rel="icon" href="favicon.ico">
+
+  </head>
+  <body>
+    <div class="top-container">
+      <a id="dashboard" href="dashboard.html" style="background:#2B6777">Dashboard</a>
+      <img id="app-logo" src="../images/App_Logo.png" alt="App Logo">
+    </div>
+    <div class="middle-container">
+      <div id="navigation-bar">
+        <ul  class="navigation-list">
+          <li>
+            <a  class="navigation-item" href="tracking.html">VEHICLE TRACKING</a>
+          </li>
+          <li>
+            <a class="navigation-item" href="vehicle.html">VEHICLES</a>
+          </li>
+          <li>
+            <a class="navigation-item" href="schedule.html">SCHEDULE</a>
+          </li>
+          <li>
+            <a class="navigation-item" href="maintenance.html">MAINTENCANCE</a>
+          </li>
+          <li>
+            <a class="navigation-item" href="fuel.html">FUEL</a>
+          </li>
+          <li>
+            <a class="navigation-item" href="driver.html">DRIVER</a>
+          </li>
+        </ul>
+
+        <a id="reports" href="reports.html">REPORTS</a>
+      </div>
+
+      <div class="data-section">
+        <div id="map-container" >
+          <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d15684.113532850883!2d-61.501926!3d10.654902850000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2stt!4v1634922338257!5m2!1sen!2stt" ></iframe>
+        </div>
+        <div id="dash-items-container">
+          <div id="dash-items-listing">
+            <a class="dash-items-links links" href="schedule-search-results.html">ACTIVE VEHICLES <span class="dash-data"> 100 </span></a>
+            <a class="dash-items-links links" href="fuel-search-results.html"> WEEKLY FUEL<span class="dash-data"> $52.1K </span></a>
+            <a class="dash-items-links links" href="maintenance-search-results.html">OUTSTANDING ISSUES <span class="dash-data"> 32 </span></a>
+        </div>
+        </div>
+      </div>
+    </div>
+    <div class="bottom-container">
+      <p id="copywrite">© 2021 Kanika Agimudie.</p>
+    </div>
+  </body>
+</html>
